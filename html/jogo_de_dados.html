@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="teste.css">
+    <title>Jogo de Dados</title>
+</head>
+	<body>
+	<h1> Jogo de Dados </h1>
+	<div id="inicial">
+		<h3>Selecione seu Dado </h3>
+		<label>Jogador 1:</label>
+	    <input id="nome_id" type="text" name="nome" placeholder="Digite seu Nickname">
+
+		<label> Jogador 2:</label>
+	    <input id="nome2_id" type="text" name="nome" placeholder="Digite seu Nickname	">
+		<br>
+		<br>
+		<input type="button" id="botao" onclick="cadastrarjogadores()" value="Cadastrar Jogador"/>
+	</div>
+
+	<div id="jogo" style="display:none">
+		
+	<img id="Img1" src="dado0.png" width="100px" height="100px"/>
+	<div id="dado" ></div>
+	<br/>
+	<button onclick="sorteia()" ><strong> CLIQUE PRA SORTEAR </strong></button> 
+	<hr>
+	
+	<p id="J2"> </p>
+	
+
+	<!--<p id="pontuacao2"> </p>-->
+
+	<img id="Img2" src="dado0.png" width="100px" height="100px"/>
+	<div id="dado2"></div>
+	<br>
+	<br>
+	<br>
+	<hr>		
+	<button onclick="reset()"><h3> Reiniciar Jogo </h3></button>
+
+	
+	<br><br><br>
+
+	<table>
+		<tr>
+	    	<th>Pontuação</th>
+ 		</tr>
+		<tr>
+	    <td id="jogador1"></td>
+	    
+	    <td><p id="pontuacao1"></p></td>
+		</tr>
+		<tr>
+	    <td id="jogador2"></td>
+	    
+	    <td><p id="pontuacao2"> </p></td>
+		</tr>
+	</table>
+
+	</div>
+
+		
+	<script src="Jogo_de_dados.js"> </script>
+	</body>
+</html>	
